@@ -1,0 +1,16 @@
+.cheat-meal-pic {
+    max-width: 40vw;
+    max-height: 40vh;
+}
+.just-another-pic {
+    max-width: 40vw;
+    max-height: 40vh;
+    flex: 1;
+    width: 100%;
+}
+
+.tornados-fc-pic {
+    max-width: 40vw;
+    max-height: 40vh;
+    width: 100%;
+}

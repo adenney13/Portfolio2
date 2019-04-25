@@ -9,11 +9,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav>
+        <div className="nav">
+          <h1 className = "header">Aaron Denney</h1>
+          <p className="sub-header">Web Developer/Software Engineer</p>
           <Link to="/about">About</Link>
           <Link to="/work">My Work</Link>
           <Link to="/contact">Contact Me</Link>
-        </nav>
+        </div>
         <main>
           <Route 
             path="/about"
