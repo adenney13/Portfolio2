@@ -64,8 +64,27 @@ img{
     max-height: 20vh;
 }
 
+.about-me-body {
+    display: flex;
+}
 
+.pbrandstatement {
+    flex: 1;
+    padding: 2vh;
+}
 
+li {
+    list-style-type: none;
+}
+
+.tools {
+    flex: 1;
+    padding-top: 2vh;
+}
+
+.tools-list {
+    padding: 0;
+}
 
 @keyframes from-bottom {
     0% {
