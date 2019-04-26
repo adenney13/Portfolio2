@@ -13,7 +13,7 @@ const CheatMeal = () => {
             <a href = 'http://amazing-mark.surge.sh/'>Visit the Cheat Meal App</a>
             <br />
             <br />
-            Technologies Used: React, Express 
+            Technologies Used: React, External API 
             </p>
         </div>
         </div>

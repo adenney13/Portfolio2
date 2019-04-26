@@ -1,6 +1,50 @@
 body {
     margin: auto 0;
     text-align: center; 
+    font-family: 'Permanent Marker', cursive;
+}
+
+a {
+    text-shadow: 1px 1px blue;
+    color: black;
+    letter-spacing: .5vw;
+    font-weight:  bold;
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+h1, h2 {
+    text-shadow: 1px 1px red;
+}
+
+.landing {
+    margin-top: 28vh;
+    text-align: center;
+    
+}
+
+img{
+    max-width: 20vw;
+    max-height: 20vh;
+    border: 2px solid black;
+    /* border-radius: 50%; */
+}
+
+hr {
+    width: 50vw;
+    margin-bottom: 0;
+    height: .2vh;
+    background-color: black;
+}
+
+img.photo {
+    border-radius: 50%;
+    padding: 0;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    box-shadow: 1px 1px red;
 }
 
 /* div {
@@ -9,33 +53,47 @@ body {
 .cheat-meal-pic {
     max-width: 40vw;
     max-height: 40vh;
+    border: 2px solid black;
+    border-radius: 10%;
 }
+
+/* .just-another-day {
+    display: flex;
+} */
+
 .just-another-pic {
     max-width: 40vw;
     max-height: 40vh;
-    flex: 1;
+    /* flex: 1; */
     width: 100%;
+    border: 2px solid black;
+    border-radius: 10%;
 }
 
 .tornados-fc-pic {
     max-width: 40vw;
     max-height: 40vh;
     width: 100%;
+    border: 2px solid black;
+    border-radius: 10%;
 }
 
 .work-stuff {
     animation-name: from-bottom;
     animation-duration: 1s;   
+    margin-top: 28vh;
 }
 
 .contact-stuff {
     animation-name: from-bottom;
     animation-duration: 1s;
+    margin-top: 28vh;
 }
 
 .about-me {
     animation-name: from-bottom;
     animation-duration: 1s;
+    margin-top: 28vh;
 }
 
 .header {
@@ -59,13 +117,17 @@ body {
     padding: 2vh;
 }
 
-img{
-    max-width: 20vw;
-    max-height: 20vh;
+.project-desc {
+    padding: 2vh;
 }
 
 .about-me-body {
+    /* display: flex; */
+}
+
+.list-split {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .pbrandstatement {
@@ -86,13 +148,29 @@ li {
     padding: 0;
 }
 
+.top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+
+
+@media only screen and (max-height: 670px) {
+    .work-stuff {
+        margin-top: 35vh;
+        animation-name: from-bottom;
+        animation-duration: 1s;  
+    }
+}
+
 @keyframes from-bottom {
     0% {
-        margin-top: 100%;
+        margin-top: 100vh;
     }
 
     100% {
-        margin-top: 0%;
+        margin-top: 28vh;
     }
 
 }
