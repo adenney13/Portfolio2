@@ -6,7 +6,7 @@ import Work from "./Work/Work"
 import Contact from "./Contact/Contact"
 import selfie from '../Assets/profile-pic.PNG'
 import Landing from "./Landing"
-
+import Resume from './Resume/Resume'
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
           <div className="header">
             <div className="nav">
               <div className="namestuff">
-                <h1 className = "header-name">Aaron Denney</h1>
+                <Link to="/" className = 'piclink'><h1 className = "header-name">Aaron Denney</h1></Link>
                 <p className="sub-header">Web Developer/Software Engineer</p>
               </div>
               <div className="links">
@@ -25,10 +25,12 @@ class App extends Component {
                 <Link to="/work">My Work</Link>
                 <br/>
                 <Link to="/contact">Contact Me</Link>
+                <br />
+                <Link to="/resume">My Resume</Link>
               </div>
             </div>
             <div>
-              <img src= {selfie} alt="me" className="photo"/>
+              <Link to="/" className = 'piclink'><img src= {selfie} alt="me" className="photo"/></Link>
             </div>
           </div>
           <hr/>
@@ -49,6 +51,10 @@ class App extends Component {
           <Route 
             path="/contact"
             component={Contact}
+          />
+          <Route 
+            path="/resume"
+            component={Resume}
           />
         </main>
       </div>

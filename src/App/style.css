@@ -15,9 +15,19 @@ a {
     font-weight:  bold;
 }
 
+a.piclink {
+    text-decoration: none;
+}
+
+a.piclink:hover{
+    background-color: white;
+}
+
 a:hover {
     background-color: lightskyblue;
 }
+
+
 
 h1, h2 {
     text-shadow: 1px 1px red;
@@ -85,19 +95,25 @@ img.photo {
 .work-stuff {
     animation-name: from-bottom;
     animation-duration: 1s;   
-    margin-top: 28vh;
+    margin-top: 29vh;
 }
 
 .contact-stuff {
     animation-name: from-bottom;
     animation-duration: 1s;
-    margin-top: 28vh;
+    margin-top: 29vh;
 }
 
 .about-me {
     animation-name: from-bottom;
     animation-duration: 1s;
-    margin-top: 28vh;
+    margin-top: 29vh;
+}
+
+.my-resume {
+    animation-name: from-bottom;
+    animation-duration: 1s;
+    margin-top: 29vh;
 }
 
 .header {
