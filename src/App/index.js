@@ -4,17 +4,27 @@ import { Route, Link } from "react-router-dom"
 import About from "./About/About"
 import Work from "./Work/Work"
 import Contact from "./Contact/Contact"
+import selfie from '../Assets/profile-pic.PNG'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="nav">
-          <h1 className = "header">Aaron Denney</h1>
-          <p className="sub-header">Web Developer/Software Engineer</p>
-          <Link to="/about">About</Link>
-          <Link to="/work">My Work</Link>
-          <Link to="/contact">Contact Me</Link>
+        <div className="header">
+          <div className="nav">
+            <h1 className = "header-name">Aaron Denney</h1>
+            <p className="sub-header">Web Developer/Software Engineer</p>
+            
+              <Link to="/about">About</Link>
+              <br/>
+              <Link to="/work">My Work</Link>
+              <br/>
+              <Link to="/contact">Contact Me</Link>
+           
+          </div>
+          <div className="photo">
+            <img src= {selfie} alt="me"/>
+          </div>
         </div>
         <main>
           <Route 

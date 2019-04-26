@@ -1,3 +1,11 @@
+body {
+    margin: auto 0;
+    text-align: center; 
+}
+
+/* div {
+    border: 1px solid black;
+} */
 .cheat-meal-pic {
     max-width: 40vw;
     max-height: 40vh;
@@ -29,6 +37,35 @@
     animation-name: from-bottom;
     animation-duration: 1s;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-name {
+    margin: 0;
+}
+
+.nav {
+    flex: 1;
+    text-align: left;
+    padding: 2vh;
+}
+
+.photo {
+    flex: 1;
+    text-align: right;
+    padding: 2vh;
+}
+
+img{
+    max-width: 20vw;
+    max-height: 20vh;
+}
+
+
+
 
 @keyframes from-bottom {
     0% {
