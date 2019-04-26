@@ -15,15 +15,17 @@ class App extends Component {
         <div className="top">
           <div className="header">
             <div className="nav">
-              <h1 className = "header-name">Aaron Denney</h1>
-              <p className="sub-header">Web Developer/Software Engineer</p>
-
+              <div className="namestuff">
+                <h1 className = "header-name">Aaron Denney</h1>
+                <p className="sub-header">Web Developer/Software Engineer</p>
+              </div>
+              <div className="links">
                 <Link to="/about">About</Link>
                 <br/>
                 <Link to="/work">My Work</Link>
                 <br/>
                 <Link to="/contact">Contact Me</Link>
-            
+              </div>
             </div>
             <div>
               <img src= {selfie} alt="me" className="photo"/>

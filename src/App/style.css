@@ -1,18 +1,22 @@
 body {
     margin: auto 0;
     text-align: center; 
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    /* font-family: 'Poiret One', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Abril Fatface', cursive; */
+    font-weight: bold;
 }
 
 a {
     text-shadow: 1px 1px blue;
     color: black;
-    letter-spacing: .5vw;
+    letter-spacing: .3vw;
     font-weight:  bold;
 }
 
 a:hover {
-    background-color: aqua;
+    background-color: lightskyblue;
 }
 
 h1, h2 {
@@ -22,7 +26,7 @@ h1, h2 {
 .landing {
     margin-top: 28vh;
     text-align: center;
-    
+    padding: 2vh;
 }
 
 img{
@@ -156,21 +160,56 @@ li {
 }
 
 
-@media only screen and (max-height: 670px) {
+@media screen and (max-height: 670px) {
+
     .work-stuff {
         margin-top: 35vh;
         animation-name: from-bottom;
         animation-duration: 1s;  
     }
+    .contact-stuff {
+        animation-name: from-bottom;
+        animation-duration: 1s;
+        margin-top: 35vh;
+    }
+    
+    .about-me {
+        animation-name: from-bottom;
+        animation-duration: 1s;
+        margin-top: 35vh;
+    }
+    .landing {
+        margin-top: 35vh;
+        text-align: center;
+    }
+    @keyframes from-bottom {
+        0% {
+            margin-top: 100vh;
+        }
+    
+        100% {
+            margin-top: 35vh;
+        }
+    
+    }
 }
 
-@keyframes from-bottom {
-    0% {
-        margin-top: 100vh;
+@media screen and (min-height: 671px) {
+    @keyframes from-bottom {
+        0% {
+            margin-top: 100vh;
+        }
+    
+        100% {
+            margin-top: 28vh;
+        }
+    
     }
+}
 
-    100% {
-        margin-top: 28vh;
+@media screen and (min-width: 900px) {
+    .nav {
+        box-align: center;
     }
-
+    
 }
